@@ -1,0 +1,68 @@
+{
+  "symbol": "BTC-USDT",
+  "rows_raw": 62732,
+  "rows_features": 62563,
+  "walk_forward_points": 51797,
+  "best_forecast_model": "lstm",
+  "latest_forecast_annual_vol": 0.2868877947330475,
+  "forecast_metrics": [
+    {
+      "model": "garch",
+      "mae": 0.2642385713940344,
+      "rmse": 0.3350785849008944,
+      "mape_pct": 78.20967819076925,
+      "correlation": 0.37826203268510605
+    },
+    {
+      "model": "lstm",
+      "mae": 0.15925845777916817,
+      "rmse": 0.24412634206606554,
+      "mape_pct": 33.414129890590196,
+      "correlation": 0.4949746555688587
+    }
+  ],
+  "strategy_metrics": [
+    {
+      "model": "buy_hold",
+      "total_return_pct": 959.3025735816673,
+      "cagr_pct": 49.05728103692007,
+      "sharpe": 0.9495784053303846,
+      "max_drawdown_pct": -77.19171932933826,
+      "avg_exposure": 1.0,
+      "turnover": 0.0
+    },
+    {
+      "model": "garch",
+      "total_return_pct": 215.93079701065344,
+      "cagr_pct": 21.476389100214497,
+      "sharpe": 0.8036420897132888,
+      "max_drawdown_pct": -56.21993332741104,
+      "avg_exposure": 0.547255956784928,
+      "turnover": 538.0490463590561
+    },
+    {
+      "model": "lstm",
+      "total_return_pct": 295.1097747400369,
+      "cagr_pct": 26.158919978429008,
+      "sharpe": 0.8725948568588644,
+      "max_drawdown_pct": -56.84731882130565,
+      "avg_exposure": 0.5806602835655212,
+      "turnover": 196.83973693847656
+    }
+  ],
+  "monte_carlo": {
+    "mean_annual_vol": 0.2869678564252533,
+    "median_annual_vol": 0.2869898542124883,
+    "p05_annual_vol": 0.2747309751346707,
+    "p95_annual_vol": 0.29887645100317245
+  },
+  "artifacts": {
+    "feature_frame_path": "C:\\Users\\admin\\ML_for_stock_market\\data\\processed\\feature_frame.csv",
+    "predictions_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\predictions.csv",
+    "forecast_metrics_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\forecast_metrics.csv",
+    "strategy_metrics_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\strategy_metrics.csv",
+    "forecast_plot_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\forecast_comparison.png",
+    "equity_plot_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\equity_curve.png",
+    "monte_carlo_plot_path": "C:\\Users\\admin\\ML_for_stock_market\\reports\\monte_carlo_volatility.png"
+  }
+}

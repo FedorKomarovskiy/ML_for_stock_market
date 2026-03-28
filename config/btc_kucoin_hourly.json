@@ -1,0 +1,54 @@
+{
+  "data": {
+    "symbol": "BTC-USDT",
+    "interval": "1hour",
+    "start_at": "2019-01-01T00:00:00+00:00",
+    "end_at": "2026-03-01T00:00:00+00:00",
+    "cache_path": "data/raw/btc_usdt_1h_2019_2026.csv"
+  },
+  "features": {
+    "forecast_horizon_hours": 24,
+    "sequence_length": 48,
+    "annualization_factor": 8760
+  },
+  "walk_forward": {
+    "train_days": 365,
+    "test_days": 90,
+    "step_days": 90
+  },
+  "garch": {
+    "p": 1,
+    "q": 1
+  },
+  "model": {
+    "hidden_size": 32,
+    "num_layers": 1,
+    "dropout": 0.0,
+    "epochs": 10,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "patience": 3,
+    "seed": 42
+  },
+  "strategy": {
+    "target_annual_vol": 0.4,
+    "max_leverage": 0.6,
+    "transaction_cost_bps": 5.0
+  },
+  "monte_carlo": {
+    "paths": 1000,
+    "horizon_hours": 720,
+    "seed": 42
+  },
+  "outputs": {
+    "feature_frame_path": "data/processed/feature_frame.csv",
+    "predictions_path": "reports/predictions.csv",
+    "forecast_metrics_path": "reports/forecast_metrics.csv",
+    "strategy_metrics_path": "reports/strategy_metrics.csv",
+    "summary_path": "reports/summary.json",
+    "forecast_plot_path": "reports/forecast_comparison.png",
+    "equity_plot_path": "reports/equity_curve.png",
+    "monte_carlo_plot_path": "reports/monte_carlo_volatility.png"
+  }
+}
