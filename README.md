@@ -1,5 +1,21 @@
 # BTC-USDT Volatility Forecasting Project
 
+## Notebook for review
+
+Main submission notebook:
+
+- `notebooks/btc_volatility_project.ipynb`
+
+This notebook is the primary file for review and contains:
+
+- step-by-step comments for each stage;
+- forecast vs realized volatility charts;
+- GARCH and LSTM model visualizations;
+- metric tables including `Sharpe` and `Max Drawdown`;
+- Monte Carlo modeling block.
+
+The Python modules remain in the repository, but the notebook above is the main deliverable for checking the project.
+
 Репозиторий содержит полностью воспроизводимый проект по прогнозированию волатильности для `BTC-USDT` на часовых данных `KuCoin`.
 
 В проекте реализованы:
